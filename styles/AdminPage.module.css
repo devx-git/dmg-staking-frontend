@@ -1,0 +1,54 @@
+/* frontend/styles/AdminPage.module.css */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.statCard {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.statCard h4 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+.statCard p {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-family: var(--font-geist-mono);
+}
+.adminControls {
+    margin-top: 2rem;
+    background: rgba(74, 144, 226, 0.05);
+    border: 1px solid var(--primary-color);
+    padding: 2rem;
+    border-radius: 12px;
+}
+.adminControls h3 {
+    margin-bottom: 1rem;
+}
+.connectPrompt {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--card-background);
+    border-radius: 8px;
+}
+.connectPrompt p {
+    margin-bottom: 1rem;
+}
+.backLink {
+    text-align: center;
+    margin-top: 2rem;
+}
+.backLink a {
+    color: var(--primary-color);
+    font-weight: bold;
+}

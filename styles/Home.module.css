@@ -1,0 +1,60 @@
+.homeContainer {
+  width: 100%;
+}
+.hero {
+  text-align: center;
+  padding: 6rem 0;
+  background: linear-gradient(45deg, rgba(74,144,226,0.1), rgba(80,227,194,0.1));
+  /* text-align: center;
+  padding: 8rem 0;
+  color: white; 
+  background-image: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 20px 20px; */
+}
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.highlight {
+  color: var(--primary-color);
+}
+.heroSubtitle {
+  font-size: 1.25rem;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  color: var(--text-secondary);
+}
+.features {
+  padding: 5rem 0;
+}
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.featureCard {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+}
+.featureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
