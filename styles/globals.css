@@ -320,3 +320,12 @@ main {
   color: var(--text-secondary);
   margin-bottom: 2rem;
 }
+
+/* frontend/styles/globals.css */
+
+/* ... (tus estilos anteriores de .btn, .btn-primary, etc.) ... */
+
+.btn-secondary {
+  background-color: var(--secondary-color); /* Color turquesa de acento */
+  color: #2c3e50; /* Texto oscuro para buen contraste */
+}

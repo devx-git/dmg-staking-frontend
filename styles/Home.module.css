@@ -58,3 +58,39 @@
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
+
+/* frontend/styles/Home.module.css */
+
+/* frontend/styles/Home.module.css */
+
+.ctaSection {
+  /* Aquí está la magia: 
+    1. Creamos un gradiente oscuro semitransparente que va encima.
+    2. Ponemos tu imagen de fondo debajo del gradiente.
+  */
+  background: 
+    linear-gradient(45deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9)), 
+    url(/vault-bg.jpg);
+
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center; /* Centra la imagen */
+
+  color: #ecf0f1;
+  text-align: center;
+  padding: 6rem 1.5rem; /* Aumentamos un poco el padding para más impacto */
+  margin-top: 4rem;
+  border-radius: 20px;
+  position: relative; /* Necesario para efectos futuros si los quieres */
+}
+
+.ctaSection .sectionTitle {
+    color: white;
+}
+
+.ctaSubtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}

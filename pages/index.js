@@ -45,6 +45,25 @@ export default function Home() {
             </div>
           </div>
         </section>
+         {/* --- NUEVA SECCIÓN: LLAMADA A LA ACCIÓN (BÓVEDA) --- */}
+        <section className={styles.ctaSection}>
+          <div className="container">
+            <h2 className={styles.sectionTitle}>Presentamos la Bóveda DMG</h2>
+            <p className={styles.ctaSubtitle}>
+              Más allá del staking, nuestra Bóveda te ofrece un ecosistema completo para gestionar tus activos digitales. Regístrate para acceder a herramientas exclusivas, análisis de portafolio y nuevas oportunidades de rentabilidad, todo con la máxima seguridad.
+            </p>
+            {/* Usamos una etiqueta <a> para enlaces externos */}
+            <a 
+              href="https://boveda.dmgcripto.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-secondary"
+            >
+              Acceder a la Bóveda
+            </a>
+          </div>
+        </section>
+        {/* --- FIN DE LA NUEVA SECCIÓN --- */}
       </div>
     </>
   );
