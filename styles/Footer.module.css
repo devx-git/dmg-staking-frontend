@@ -1,6 +1,37 @@
+/* frontend/styles/Footer.module.css */
 .footer {
-  background: #222;
+  background: #5e5d5d;
   color: #aaa;
   padding: 2rem 0;
   margin-top: 4rem;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+  gap: 1.5rem; /* Espacio por si se apilan */
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Espacio entre los iconos */
+}
+
+.socialIcons a {
+  transition: transform 0.2s ease-in-out;
+  filter: grayscale(100%) opacity(0.7); /* Iconos en gris por defecto */
+}
+
+/* frontend/styles/Footer.module.css */
+
+.socialIcons a:hover {
+  transform: scale(1.2);
+  filter: 
+    grayscale(0%) 
+    opacity(1) 
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) /* <-- Crea un resplandor blanco alrededor */
+    brightness(1.1); /* <-- Hace el icono un 10% más brillante */
 }
