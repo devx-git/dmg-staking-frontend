@@ -149,7 +149,7 @@ export default function StakingPage() {
             const interval = setInterval(updateUserData, 10000); 
             return () => clearInterval(interval);
         }
-    }, [account, tokenContract, stakingContract]);
+    }, [account, tokenContract, stakingContract, updateUserData]);
 
     return (
     <div className="container">

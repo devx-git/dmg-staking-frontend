@@ -80,7 +80,7 @@ export default function Home() {
                 <div className={styles.tutorialCard}>
                   <Image src="/images/step3.png" alt="Comprar MATIC" width={80} height={80} />
                   <h3>3. Obtén MATIC</h3>
-                  <p>Necesitarás MATIC, la moneda nativa de Polygon, para pagar las pequeñas comisiones de la red ("gas"). Puedes comprarlo en un exchange seguro.</p>
+                  <p>Necesitarás MATIC, la moneda nativa de Polygon, para pagar las pequeñas comisiones de la red (&quot;Gas&quot;). Puedes comprarlo en un exchange seguro.</p>
                   <a href="https://www.coinbase.com/price/polygon" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
                     Comprar MATIC →
                   </a>
