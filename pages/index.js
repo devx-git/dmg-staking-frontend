@@ -173,7 +173,7 @@ export default function Home() {
 
                 {/* Paso 3: Configurar Medio de Pago */}
                 <div className={styles.tutorialCard}>
-                  <Image src="/images/step9.png" alt="Configurar Medio de Pago" width={80} height={80} />
+                  <Image src="/images/step9.PNG" alt="Configurar Medio de Pago" width={80} height={80} />
                   <h3>3. Configura tu Billetera</h3>
                   <p>Agrega los datos de tu billetera cripto o medio de pago preferido para realizar transacciones de forma segura en la plataforma.</p>
                   <a href="https://boveda.dmgcripto.com/metodo_pago" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
@@ -183,7 +183,7 @@ export default function Home() {
 
                 {/* Paso 4: Elegir Plan de Socio Inversionista */}
                 <div className={styles.tutorialCard}>
-                  <Image src="/images/step10.png" alt="Elegir Plan de Socio Inversionista" width={80} height={80} />
+                  <Image src="/images/step10.PNG" alt="Elegir Plan de Socio Inversionista" width={80} height={80} />
                   <h3>4.  Elige tu Plan de Socio</h3>
                   <p>Explora nuestros planes diseñados para socios inversionistas. Selecciona el que mejor se adapte a tus objetivos financieros.</p>
                   <a href="https://boveda.dmgcripto.com/lista_inversion" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
@@ -193,7 +193,7 @@ export default function Home() {
 
                  {/* Paso 5: Comprar Plan y Confirmación */}
                 <div className={styles.tutorialCard}>
-                  <Image src="/images/step11.png" alt="Comprar Plan y Confirmación" width={80} height={80} />
+                  <Image src="/images/step11.PNG" alt="Comprar Plan y Confirmación" width={80} height={80} />
                   <h3>5. Compra y Confirma</h3>
                   <p>Adquiere tu plan y sigue los pasos para el pago. Nuestro equipo confirmará tu transacción para activar tu membresía.</p>
                   {/* Usamos <Link> para enlaces internos */}
@@ -204,7 +204,7 @@ export default function Home() {
 
                 {/* Paso 6: Acceder a Cursos de Criptoactivos */}
                 <div className={styles.tutorialCard}>
-                  <Image src="/images/step12.png" alt="Acceder a Cursos de Criptoactivos" width={80} height={80} />
+                  <Image src="/images/step12.PNG" alt="Acceder a Cursos de Criptoactivos" width={80} height={80} />
                   <h3>6. Explora Nuestros Cursos</h3>
                   <p>Una vez activo tu plan o al adquirir tokens DMG, accede a una biblioteca de cursos sobre criptoactivos a precios exclusivos.</p>
                   <a href="https://boveda.dmgcripto.com/historial_curso" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
