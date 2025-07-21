@@ -157,3 +157,40 @@
 .tutorialLink:hover {
   opacity: 0.8;
 }
+
+/* --- NUEVOS ESTILOS PARA LA SECCIÓN DEL MANUAL --- */
+.manualSection {
+  text-align: center;
+  margin-top: 4rem; /* Espacio superior para separarlo de la cuadrícula de pasos */
+  padding-top: 2.5rem; /* Padding interno superior */
+  border-top: 1px solid var(--border-color); /* Línea divisoria sutil */
+}
+
+.manualText {
+  color: var(--text-secondary); /* Color de texto secundario para la descripción */
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px; /* Limita el ancho del texto para mejor legibilidad */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.manualLink {
+  display: inline-block; /* Para que se comporte como un bloque pero respete el text-align */
+  background-color: var(--success-color); /* Usando un color de éxito/verde para el botón */
+  color: #500bd1; /* Texto blanco */
+  padding: 14px 30px; /* Padding generoso para que parezca un botón */
+  border-radius: 8px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2); /* Sombra sutil con el color verde */
+}
+
+.manualLink:hover {
+  background-color: var(--success-dark-color); /* Un verde más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Pequeño efecto de elevación */
+  box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
+}
+

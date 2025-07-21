@@ -141,6 +141,103 @@ export default function Home() {
           </div>
         </section>
         {/* --- FIN DE LA NUEVA SECCIÓN --- */}
+
+        {/* --- NUEVA SECCIÓN: TUTORIAL INTERACTIVO --- */}
+          <section className={styles.tutorialSection}>
+            <div className="container">
+              <h2 className={styles.sectionTitle}>Conéctate a la Bóveda DMG: Tu Ruta al Éxito Cripto</h2>
+              <p className={styles.sectionSubtitle}>
+                Accede a tu cuenta, gestiona tus inversiones y explora el mundo de los criptoactivos con nuestra plataforma segura e intuitiva.
+              </p>
+              <div className={styles.tutorialGrid}>
+
+                {/* Paso 1: Inicio de Sesión / Registro */}
+                <div className={styles.tutorialCard}>
+                  <Image src="/images/step7.png" alt="Inicio de Sesión" width={80} height={80} />
+                  <h3>1.  Accede o Regístrate</h3>
+                  <p>Si ya tienes credenciales, inicia sesión. ¿Eres nuevo? Regístrate para ser un socio fundador de DMG y comienza tu viaje.</p>
+                  <a href="https://boveda.dmgcripto.com/login" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
+                    Ir a Iniciar Sesión →
+                  </a>
+                </div>
+
+                {/* Paso 2: Actualizar Perfil */}
+                <div className={styles.tutorialCard}>
+                  <Image src="/images/step8.png" alt="Actualizar Perfil" width={80} height={80} />
+                  <h3>2. Actualiza tu Perfil</h3>
+                  <p>Valida tus datos y personaliza tu cuenta. Sube tu foto de perfil o elige un avatar para identificarte en la comunidad.</p>
+                  <a href="https://boveda.dmgcripto.com/perfil" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
+                    Editar Perfil →
+                  </a>
+                </div>
+
+                {/* Paso 3: Configurar Medio de Pago */}
+                <div className={styles.tutorialCard}>
+                  <Image src="/images/step9.png" alt="Configurar Medio de Pago" width={80} height={80} />
+                  <h3>3. Configura tu Billetera</h3>
+                  <p>Agrega los datos de tu billetera cripto o medio de pago preferido para realizar transacciones de forma segura en la plataforma.</p>
+                  <a href="https://boveda.dmgcripto.com/metodo_pago" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
+                    Añadir Medio de Pago →
+                  </a>
+                </div>
+
+                {/* Paso 4: Elegir Plan de Socio Inversionista */}
+                <div className={styles.tutorialCard}>
+                  <Image src="/images/step10.png" alt="Elegir Plan de Socio Inversionista" width={80} height={80} />
+                  <h3>4.  Elige tu Plan de Socio</h3>
+                  <p>Explora nuestros planes diseñados para socios inversionistas. Selecciona el que mejor se adapte a tus objetivos financieros.</p>
+                  <a href="https://boveda.dmgcripto.com/lista_inversion" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
+                    Ver Planes →
+                  </a>
+                </div>
+
+                 {/* Paso 5: Comprar Plan y Confirmación */}
+                <div className={styles.tutorialCard}>
+                  <Image src="/images/step11.png" alt="Comprar Plan y Confirmación" width={80} height={80} />
+                  <h3>5. Compra y Confirma</h3>
+                  <p>Adquiere tu plan y sigue los pasos para el pago. Nuestro equipo confirmará tu transacción para activar tu membresía.</p>
+                  {/* Usamos <Link> para enlaces internos */}
+                  <Link href="https://boveda.dmgcripto.com/seleccion_inversion_view/Mzg=" className={styles.tutorialLink}>
+                    Estado de Compra →
+                  </Link>
+                </div>
+
+                {/* Paso 6: Acceder a Cursos de Criptoactivos */}
+                <div className={styles.tutorialCard}>
+                  <Image src="/images/step12.png" alt="Acceder a Cursos de Criptoactivos" width={80} height={80} />
+                  <h3>6. Explora Nuestros Cursos</h3>
+                  <p>Una vez activo tu plan o al adquirir tokens DMG, accede a una biblioteca de cursos sobre criptoactivos a precios exclusivos.</p>
+                  <a href="https://boveda.dmgcripto.com/historial_curso" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
+                    Ir a Cursos Cripto →
+                  </a>
+                </div>
+
+                 {/* --- Nueva Sección: Enlace al Manual Detallado --- */}
+                    <div className={styles.manualSection}>
+                      <p className={styles.manualText}>
+                        ¿Necesitas una guía más exhaustiva? Descarga nuestro manual completo con todos los detalles y consejos para aprovechar al máximo la Bóveda DMG.
+                      </p>
+                      <a href="/manuals/manual-boveda-dmg.pdf" target="_blank" rel="noopener noreferrer" className={styles.manualLink}>
+                        Descargar Manual Completo (PDF)
+                      </a>
+                    </div>
+                  {/* --- Fin Nueva Sección --- */}
+
+                  {/* --- Nueva Sección: Enlace al Manual Detallado --- */}
+                    <div className={styles.manualSection}>
+                      <p className={styles.manualText}>
+                        ¿Quieres dominar el Staking de DMG? Descarga nuestro manual detallado con todos los pasos, consejos y estrategias para optimizar tus recompensas.
+                      </p>
+                      <a href="/manuals/manual-staking-dmg.pdf" target="_blank" rel="noopener noreferrer" className={styles.manualLink}>
+                        Descargar Manual de Staking (PDF)
+                      </a>
+                    </div>
+                  {/* --- Fin Nueva Sección --- */}
+
+              </div>
+            </div>
+          </section>
+          {/* --- FIN DEL TUTORIAL --- */}
       </div>
     </>
   );
