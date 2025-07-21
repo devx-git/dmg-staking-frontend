@@ -131,7 +131,7 @@ export default function Home() {
             </p>
             {/* Usamos una etiqueta <a> para enlaces externos */}
             <a 
-              href="https://sandybrown-stingray-626898.hostingersite.com/login" 
+              href="https://boveda.dmgcripto.com/login" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-secondary"
