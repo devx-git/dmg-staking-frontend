@@ -17,6 +17,7 @@ const plans = [
 ];
 
 const YOUR_WALLET_ADDRESS = "19u3LhQXYg5NRkZMQSedyKA4Fi2oki6fgk";
+const USDT_WALLET_ADDRESS = "TGDy2zNnDGPyfuXBLLkqsiA9MqXEAYzCLF";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -292,7 +293,7 @@ export default function Home() {
 
       </div>
       {/* Renderiza el modal si está abierto */}
-      {isModalOpen && <PaymentModal plan={selectedPlan} onClose={closeModal} walletAddress={YOUR_WALLET_ADDRESS} />}
+      {isModalOpen && <PaymentModal plan={selectedPlan} onClose={closeModal} walletAddress={YOUR_WALLET_ADDRESS} usdtWalletAddress={USDT_WALLET_ADDRESS} />}
     </>
   );
 }
