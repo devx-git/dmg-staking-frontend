@@ -266,7 +266,8 @@ export default function Home() {
           </section>
           {/* --- FIN DEL TUTORIAL --- */}
 
-             {/* --- NUEVA SECCIÓN: PLANES DE INVERSIÓN --- */}
+           
+          {/* --- NUEVA SECCIÓN: PLANES DE INVERSIÓN --- */}
         <section className={styles.plansSection}>
           <div className="container">
             <h2 className={styles.sectionTitle}>Elige tu Plan y Conviértete en Parte del Futuro</h2>
@@ -290,6 +291,64 @@ export default function Home() {
           </div>
         </section>
         {/* --- FIN DE LA SECCIÓN DE PLANES --- */}
+
+        {/* --- NUEVA SECCIÓN: CONFIANZA Y ECOSISTEMA --- */}
+            <section className={styles.trustSection}>
+              <div className="container">
+                <div className={styles.trustGrid}>
+                  
+                  <div className={styles.trustCard}>
+                    <h3>📄 Contratos Verificados</h3>
+                    <p>
+                      La transparencia es nuestra prioridad. 
+                      El código de nuestros contratos inteligentes es público y ha sido verificado en Polygonscan 
+                      para que cualquiera pueda auditarlo.
+                    </p>
+                    <a 
+                      href="https://polygonscan.com/address/0xEC8D9486e63baa2A6c467c204f4aAa9A3f847D7E"  // <-- REEMPLAZA CON EL ENLACE A TU CONTRATO
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className={styles.trustLink}>
+                      Ver Contrato en Polygonscan →
+                    </a>
+                  </div>
+
+                  <div className={styles.trustCard}>
+                    <h3>🌐 Comunidad Activa</h3>
+                    <p>
+                      Un proyecto es tan fuerte como su comunidad. 
+                      Únete a nuestros canales para estar al día de las últimas noticias, 
+                      participar en debates y enterarte del mundo cripto.
+                    </p>
+                    <a 
+                      href="https://t.me/senales_trading_cripto" // <-- REEMPLAZA CON EL ENLACE A TU TELEGRAM
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className={styles.trustLink}>
+                      Únete a la Comunidad →
+                    </a>
+                  </div>
+
+                  <div className={styles.trustCard}>
+                    <h3>🗺️ Visión y Futuro</h3>
+                    <p>
+                      Estamos construyendo un ecosistema financiero completo. 
+                      Lee nuestro Whitepaper para entender nuestra visión a largo plazo, 
+                      la hoja de ruta y los detalles de la tokenomics de DMG.
+                    </p>
+                    <a 
+                      href="/whitepaper.pdf" // <-- ENLACE A TU FUTURO WHITEPAPER
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className={styles.trustLink}>
+                      Leer el Whitepaper →
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            {/* --- FIN DE LA NUEVA SECCIÓN --- */}
 
       </div>
       {/* Renderiza el modal si está abierto */}

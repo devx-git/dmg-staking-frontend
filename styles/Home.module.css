@@ -233,3 +233,45 @@
 .planPrice span { font-size: 1rem; color: #777; }
 .planFeatures { list-style: none; margin-bottom: 2rem; }
 .planFeatures li { padding: 0.5rem 0; }
+
+/* --- ESTILOS PARA LA SECCIÓN DE CONFIANZA --- */
+.trustSection {
+  padding: 5rem 0;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.trustCard {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trustCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.trustCard p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.trustLink {
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: opacity 0.2s;
+}
+
+.trustLink:hover {
+  opacity: 0.8;
+}

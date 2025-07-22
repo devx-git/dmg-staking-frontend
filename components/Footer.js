@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.footerContainer}`}>
-        <p>&copy; {new Date().getFullYear()} Digital Market Group. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Digital Market Group. Todos los derechos reservados. Términos y Condiciones | Aviso Legal | Política de Privacidad</p>
         
         <div className={styles.socialIcons}>
           {/* --- ICONOS ACTIVOS --- */}
