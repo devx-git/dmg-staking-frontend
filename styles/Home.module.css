@@ -275,3 +275,9 @@
 .trustLink:hover {
   opacity: 0.8;
 }
+
+.manualSection {
+  text-align: center;
+  padding: 5rem 0;
+  background-color: var(--card-background); /* Fondo blanco para separar secciones */
+}

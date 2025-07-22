@@ -261,6 +261,21 @@ export default function Home() {
                     </div>
                   {/* --- Fin Nueva Sección --- */}
 
+                  {/* --- Nueva Sección: Enlace al Manual Detallado celular--- */}
+                    <div className={styles.manualSection}>
+                      <p className={styles.manualText}>
+                        Staking Móvil: Opera Desde tu Celular, Conectate y 
+                        gestiona tu staking de DMG directamente desde la aplicación de MetaMask en tu teléfono. 
+                        para una experiencia total,
+                        donde sea que estés.
+                      </p>
+                      <a href="/manuals/manual-stakingMovil-dmg.pdf" target="_blank" rel="noopener noreferrer" className={styles.manualLink}>
+                        Descargar Guía Móvil (PDF)
+                      </a>
+                    </div>
+                  {/* --- Fin Nueva Sección --- */}
+
+
               </div>
             </div>
           </section>
