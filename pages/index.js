@@ -1,10 +1,36 @@
 // frontend/pages/index.js
 import Head from "next/head";
 import Link from 'next/link';
+import { useState } from 'react'; // Importar useState
+import PaymentModal from '@/components/PaymentModal'; // Importar el Modal
 import styles from '@/styles/Home.module.css';
 import Image from "next/image";
 
+// Definimos los planes en un array para que sea más fácil de manejar
+const plans = [
+  { name: 'Socio Fundador10', price: 10, days: 365, profit: 100, tokens: 10, featured: false },
+  { name: 'Socio Fundador20', price: 20, days: 365, profit: 200, tokens: 20, featured: false },
+  { name: 'Socio Fundador50', price: 50, days: 365, profit: 500, tokens: 50, featured: false },
+  { name: 'Socio Fundador100', price: 100, days: 365, profit: 1000, tokens: 100, featured: true }, // Plan destacado
+  { name: 'Socio Fundador VIP', price: 500, days: 365, profit: 5000, tokens: 500, featured: false },
+  { name: 'Socio Fundador VIP Exclusivo', price: 1000, days: 365, profit: 10000, tokens: 1000, featured: false },
+];
+
+const YOUR_WALLET_ADDRESS = "19u3LhQXYg5NRkZMQSedyKA4Fi2oki6fgk";
+
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  const handleBuyClick = (plan) => {
+    setSelectedPlan(plan);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedPlan(null);
+  };
   return (
     <>
       <Head>
@@ -238,7 +264,35 @@ export default function Home() {
             </div>
           </section>
           {/* --- FIN DEL TUTORIAL --- */}
+
+             {/* --- NUEVA SECCIÓN: PLANES DE INVERSIÓN --- */}
+        <section className={styles.plansSection}>
+          <div className="container">
+            <h2 className={styles.sectionTitle}>Elige tu Plan y Conviértete en Parte del Futuro</h2>
+            <div className={styles.plansGrid}>
+              {plans.map((plan) => (
+                <div key={plan.name} className={`${styles.planCard} ${plan.featured ? styles.featuredCard : ''}`}>
+                  {plan.featured && <div className={styles.featuredBadge}>Recomendado</div>}
+                  <h3>{plan.name}</h3>
+                  <p className={styles.planPrice}>${plan.price}<span>/USD</span></p>
+                  <ul className={styles.planFeatures}>
+                    <li>✓ {plan.tokens} DMG de Bienvenida</li>
+                    <li>✓ Ganancia Estimada: <strong>${plan.profit}</strong></li>
+                    <li>✓ Duración: {plan.days} días</li>
+                  </ul>
+                  <button onClick={() => handleBuyClick(plan)} className="btn btn-primary">
+                    Comprar Plan
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        {/* --- FIN DE LA SECCIÓN DE PLANES --- */}
+
       </div>
+      {/* Renderiza el modal si está abierto */}
+      {isModalOpen && <PaymentModal plan={selectedPlan} onClose={closeModal} walletAddress={YOUR_WALLET_ADDRESS} />}
     </>
   );
 }

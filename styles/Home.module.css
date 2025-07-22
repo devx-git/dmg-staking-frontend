@@ -194,3 +194,42 @@
   box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
 }
 
+/* --- ESTILOS PARA LA SECCIÓN DE PLANES --- */
+.plansSection { padding: 5rem 0; }
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.planCard {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.featuredCard {
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(74, 144, 226, 0.2);
+}
+.featuredBadge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.planCard h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+.planPrice { font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem; }
+.planPrice span { font-size: 1rem; color: #777; }
+.planFeatures { list-style: none; margin-bottom: 2rem; }
+.planFeatures li { padding: 0.5rem 0; }
