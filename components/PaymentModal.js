@@ -1,13 +1,15 @@
-// frontend/components/PaymentModal.js
+// frontend/components/PaymentModal.js - VERSIÓN CORREGIDA
+
 import Image from 'next/image';
-import { useState } from 'react'; // Importar useState
+import { useState } from 'react';
 import styles from '@/styles/PaymentModal.module.css';
 
 export default function PaymentModal({ plan, onClose, walletAddress, usdtWalletAddress }) {
-  if (!plan) return null;
+  // TODOS LOS HOOKS DEBEN IR AQUÍ, AL PRINCIPIO
+  const [paymentMethod, setPaymentMethod] = useState('crypto');
 
-  // Estado para controlar qué método de pago se muestra
-  const [paymentMethod, setPaymentMethod] = useState('crypto'); // 'crypto' o 'usdt'
+  // La condición va DESPUÉS de todos los hooks
+  if (!plan) return null;
 
   return (
     <div className={styles.modalBackdrop} onClick={onClose}>
@@ -15,7 +17,6 @@ export default function PaymentModal({ plan, onClose, walletAddress, usdtWalletA
         <button className={styles.closeButton} onClick={onClose}>&times;</button>
         <h2>Completa tu Inversión en el Plan {plan.name}</h2>
 
-        {/* Pestañas para seleccionar el método de pago */}
         <div className={styles.paymentTabs}>
           <button 
             className={`${styles.tabButton} ${paymentMethod === 'crypto' ? styles.activeTab : ''}`}
