@@ -16,6 +16,7 @@ export default function Navbar() {
           />
         </Link>
         <div className={styles.navLinks}>
+           <a href="https://web.dmgcripto.com/" target="_blank" rel="noopener noreferrer">Página Web</a>
           <Link href="/">Inicio</Link>
           <Link href="/staking">Staking dApp</Link>
         </div>
