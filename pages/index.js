@@ -43,7 +43,7 @@ export default function Home() {
         {/* Sección del Héroe */}
         <header className={styles.hero}>
           <div className="container">
-            <h1 className={styles.heroTitle}>Haz Crecer tu Inversión con <span className={styles.highlight}>DMG</span></h1>
+            <h1 className={styles.heroTitle}>Haz Crecer tu Capital con <span className={styles.highlight}>DMG</span></h1>
             <p className={styles.heroSubtitle}>
               Bienvenido a Digital Market Group. Bloquea tus tokens DMG en nuestro contrato de staking seguro y obtén recompensas pasivas por apoyar nuestra red.
             </p>
