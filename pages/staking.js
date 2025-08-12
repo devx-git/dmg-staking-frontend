@@ -156,7 +156,7 @@ export default function StakingPage() {
         {account ? (
             // Si la cuenta está conectada, muestra la UI de Staking
             <>
-                <h1>Panel de Staking de DMG</h1>
+                <h1>Panel de Staking de Digital Market Group</h1>
                 <StakingUI
                     account={account}
                     networkName={networkName}
@@ -175,7 +175,7 @@ export default function StakingPage() {
                
                 <h2>Conecta tu Billetera para Empezar</h2>
                 <p>
-                    Usa el panel de staking para bloquear tus DMG y comenzar a ganar recompensas pasivas por apoyar el ecosistema.
+                    Usa el panel de staking para bloquear tus Digital Market Group y comenzar a ganar recompensas pasivas por apoyar el ecosistema.
                 </p>
                 <ConnectWalletButton onClick={connectWallet} account={null} />
             </div>

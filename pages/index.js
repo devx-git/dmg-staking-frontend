@@ -8,10 +8,10 @@ import Image from "next/image";
 
 // Definimos los planes en un array para que sea más fácil de manejar
 const plans = [
-  { name: 'Socio Fundador10', price: 10, days: 365, profit: 100, tokens: 10, featured: false },
-  { name: 'Socio Fundador20', price: 20, days: 365, profit: 200, tokens: 20, featured: false },
-  { name: 'Socio Fundador50', price: 50, days: 365, profit: 500, tokens: 50, featured: false },
-  { name: 'Socio Fundador100', price: 100, days: 365, profit: 1000, tokens: 100, featured: true }, // Plan destacado
+  { name: 'Socio Fundador', price: 10, days: 365, profit: 100, tokens: 10, featured: false },
+  { name: 'Socio Fundador', price: 20, days: 365, profit: 200, tokens: 20, featured: false },
+  { name: 'Socio Fundador', price: 50, days: 365, profit: 500, tokens: 50, featured: false },
+  { name: 'Socio Fundador', price: 100, days: 365, profit: 1000, tokens: 100, featured: true }, // Plan destacado
   { name: 'Socio Fundador VIP', price: 500, days: 365, profit: 5000, tokens: 500, featured: false },
   { name: 'Socio Fundador VIP Exclusivo', price: 1000, days: 365, profit: 10000, tokens: 1000, featured: false },
 ];
@@ -43,7 +43,7 @@ export default function Home() {
         {/* Sección del Héroe */}
         <header className={styles.hero}>
           <div className="container">
-            <h1 className={styles.heroTitle}>Haz Crecer tu Capital con <span className={styles.highlight}>DMG</span></h1>
+            <h1 className={styles.heroTitle}>Construye tu futuro con <span className={styles.highlight}>Digital Market Group</span></h1>
             <p className={styles.heroSubtitle}>
               Bienvenido a Digital Market Group. Bloquea tus tokens DMG en nuestro contrato de staking seguro y obtén recompensas pasivas por apoyar nuestra red.
             </p>
@@ -152,9 +152,9 @@ export default function Home() {
          {/* --- NUEVA SECCIÓN: LLAMADA A LA ACCIÓN (BÓVEDA) --- */}
         <section className={styles.ctaSection}>
           <div className="container">
-            <h2 className={styles.sectionTitle}>Presentamos la Bóveda DMG</h2>
+            <h2 className={styles.sectionTitle}>Presentamos la Bóveda Digital Market Group</h2>
             <p className={styles.ctaSubtitle}>
-              Más allá del staking, nuestra Bóveda te ofrece un ecosistema completo para gestionar tus activos digitales. Regístrate para acceder a herramientas exclusivas, análisis de portafolio y nuevas oportunidades de rentabilidad, todo con la máxima seguridad.
+              Nuestra Bóveda te ofrece un espacio completo para administrar tus tokens Digital Market Group. Regístrate para acceder a herramientas exclusivas, un análisis detallado de tu participación y oportunidades únicas de crecimiento dentro de la comunidad, todo con la máxima seguridad.
             </p>
             {/* Usamos una etiqueta <a> para enlaces externos */}
             <a 
@@ -172,9 +172,9 @@ export default function Home() {
         {/* --- NUEVA SECCIÓN: TUTORIAL INTERACTIVO --- */}
           <section className={styles.tutorialSection}>
             <div className="container">
-              <h2 className={styles.sectionTitle}>Conéctate a la Bóveda DMG: Tu Ruta al Éxito Cripto</h2>
+              <h2 className={styles.sectionTitle}>Conéctate a la Bóveda Digital Market Group: Tu Ruta al Éxito Cripto</h2>
               <p className={styles.sectionSubtitle}>
-                Accede a tu cuenta, gestiona tus inversiones y explora el mundo de los criptoactivos con nuestra plataforma segura e intuitiva.
+              Accede a tu cuenta, gestiona tu membresía y explora los beneficios exclusivos de la comunidad Digital Market Group con nuestra plataforma segura e intuitiva.
               </p>
               <div className={styles.tutorialGrid}>
 
@@ -182,7 +182,7 @@ export default function Home() {
                 <div className={styles.tutorialCard}>
                   <Image src="/images/step7.png" alt="Inicio de Sesión" width={80} height={80} />
                   <h3>1.  Accede o Regístrate</h3>
-                  <p>Si ya tienes credenciales, inicia sesión. ¿Eres nuevo? Regístrate para ser un socio fundador de DMG y comienza tu viaje.</p>
+                  <p>Si ya tienes credenciales, inicia sesión. ¿Eres nuevo? Regístrate para ser un socio fundador de Digital Market Group y comienza tu viaje.</p>
                   <a href="https://boveda.dmgcripto.com/login" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
                     Ir a Iniciar Sesión →
                   </a>
@@ -211,10 +211,10 @@ export default function Home() {
                 {/* Paso 4: Elegir Plan de Socio Inversionista */}
                 <div className={styles.tutorialCard}>
                   <Image src="/images/step10.PNG" alt="Elegir Plan de Socio Inversionista" width={80} height={80} />
-                  <h3>4.  Elige tu Plan de Socio</h3>
-                  <p>Explora nuestros planes diseñados para socios inversionistas. Selecciona el que mejor se adapte a tus objetivos financieros.</p>
+                  <h3>4.  Elige tu membresía de Socio</h3>
+                  <p>Explora nuestras membresias diseñados para socios fundadores. Selecciona el que mejor se adapte a tus objetivos financieros.</p>
                   <a href="https://boveda.dmgcripto.com/lista_inversion" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
-                    Ver Planes →
+                    Ver Membresias →
                   </a>
                 </div>
 
@@ -222,7 +222,7 @@ export default function Home() {
                 <div className={styles.tutorialCard}>
                   <Image src="/images/step11.PNG" alt="Comprar Plan y Confirmación" width={80} height={80} />
                   <h3>5. Compra y Confirma</h3>
-                  <p>Adquiere tu plan y sigue los pasos para el pago. Nuestro equipo confirmará tu transacción para activar tu membresía.</p>
+                  <p>Adquiere tu membresía y sigue los pasos para el pago. Nuestro equipo confirmará tu transacción para activar tu membresía.</p>
                   {/* Usamos <Link> para enlaces internos */}
                   <Link href="https://boveda.dmgcripto.com/seleccion_inversion_view/Mzg=" className={styles.tutorialLink}>
                     Estado de Compra →
@@ -233,7 +233,7 @@ export default function Home() {
                 <div className={styles.tutorialCard}>
                   <Image src="/images/step12.PNG" alt="Acceder a Cursos de Criptoactivos" width={80} height={80} />
                   <h3>6. Explora Nuestros Cursos</h3>
-                  <p>Una vez activo tu plan o al adquirir tokens DMG, accede a una biblioteca de cursos sobre criptoactivos a precios exclusivos.</p>
+                  <p>Una vez activo tu plan o al adquirir tokens Digital Market Group, accede a una biblioteca de cursos sobre criptoactivos a precios exclusivos.</p>
                   <a href="https://boveda.dmgcripto.com/historial_curso" target="_blank" rel="noopener noreferrer" className={styles.tutorialLink}>
                     Ir a Cursos Cripto →
                   </a>
@@ -242,7 +242,7 @@ export default function Home() {
                  {/* --- Nueva Sección: Enlace al Manual Detallado --- */}
                     <div className={styles.manualSection}>
                       <p className={styles.manualText}>
-                        ¿Necesitas una guía más exhaustiva? Descarga nuestro manual completo con todos los detalles y consejos para aprovechar al máximo la Bóveda DMG.
+                        ¿Necesitas una guía más exhaustiva? Descarga nuestro manual completo con todos los detalles y consejos para aprovechar al máximo la Bóveda Digital Market Group.
                       </p>
                       <a href="/manuals/manual-boveda-dmg.pdf" target="_blank" rel="noopener noreferrer" className={styles.manualLink}>
                         Descargar Manual Completo (PDF)
@@ -265,7 +265,7 @@ export default function Home() {
                     <div className={styles.manualSection}>
                       <p className={styles.manualText}>
                         Staking Móvil: Opera Desde tu Celular, Conectate y 
-                        gestiona tu staking de DMG directamente desde la aplicación de MetaMask en tu teléfono. 
+                        gestiona tu staking de Digital Market Group directamente desde la aplicación de MetaMask en tu teléfono. 
                         para una experiencia total,
                         donde sea que estés.
                       </p>
@@ -285,20 +285,20 @@ export default function Home() {
           {/* --- NUEVA SECCIÓN: PLANES DE INVERSIÓN --- */}
         <section className={styles.plansSection}>
           <div className="container">
-            <h2 className={styles.sectionTitle}>Elige tu Plan y Conviértete en Parte del Futuro</h2>
+            <h2 className={styles.sectionTitle}>Elige tu membresía y Conviértete en Parte del Futuro</h2>
             <div className={styles.plansGrid}>
               {plans.map((plan) => (
                 <div key={plan.name} className={`${styles.planCard} ${plan.featured ? styles.featuredCard : ''}`}>
                   {plan.featured && <div className={styles.featuredBadge}>Recomendado</div>}
                   <h3>{plan.name}</h3>
-                  <p className={styles.planPrice}>${plan.price}<span>/USD</span></p>
+                  <p className={styles.planPrice}>{plan.price}<span>/USD</span></p>
                   <ul className={styles.planFeatures}>
                     <li>✓ {plan.tokens} DMG de Bienvenida</li>
-                    <li>✓ Ganancia Estimada: <strong>${plan.profit}</strong></li>
+                    <li>✓ Puntos fundador: <strong>{plan.profit}</strong></li>
                     <li>✓ Duración: {plan.days} días</li>
                   </ul>
                   <button onClick={() => handleBuyClick(plan)} className="btn btn-primary">
-                    Comprar Plan
+                    Comprar
                   </button>
                 </div>
               ))}
@@ -349,7 +349,7 @@ export default function Home() {
                     <p>
                       Estamos construyendo un ecosistema financiero completo. 
                       Lee nuestro Whitepaper para entender nuestra visión a largo plazo, 
-                      la hoja de ruta y los detalles de la tokenomics de DMG.
+                      la hoja de ruta y los detalles de la tokenomics de Digital Market Group.
                     </p>
                     <a 
                       href="/whitepaper.pdf" // <-- ENLACE A TU FUTURO WHITEPAPER
