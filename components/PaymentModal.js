@@ -15,7 +15,7 @@ export default function PaymentModal({ plan, onClose, walletAddress, usdtWalletA
     <div className={styles.modalBackdrop} onClick={onClose}>
       <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
         <button className={styles.closeButton} onClick={onClose}>&times;</button>
-        <h2>Confirma tu participación como{plan.name}</h2>
+        <h2>Confirma tu participación como: {plan.name}</h2>
 
         <div className={styles.paymentTabs}>
           <button 
