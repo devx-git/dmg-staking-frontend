@@ -18,8 +18,8 @@ const plans = [
 
 const YOUR_WALLET_ADDRESS = "19u3LhQXYg5NRkZMQSedyKA4Fi2oki6fgk";
 const USDT_WALLET_ADDRESS = "TGDy2zNnDGPyfuXBLLkqsiA9MqXEAYzCLF";
-const YOUR_NEQUI_PHONE = "3245471479"; // <-- NUEVA LÍNEA: Reemplaza con tu número
-const YOUR_DAVIPLATA_PHONE = "3245471479"; // <-- NUEVA LÍNEA: Reemplaza con tu número
+const YOUR_NEQUI_PHONE = "admin@dmgcripto.com"; // <-- NUEVA LÍNEA: Reemplaza con tu número
+const YOUR_DAVIPLATA_PHONE = "admin@dmgcripto.com"; // <-- NUEVA LÍNEA: Reemplaza con tu número
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
