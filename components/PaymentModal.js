@@ -29,7 +29,7 @@ export default function PaymentModal({
     <div className={styles.modalBackdrop} onClick={onClose}>
       <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
         <button className={styles.closeButton} onClick={onClose}>&times;</button>
-        <h2>Completa tu Inversión en el Plan {plan.name}</h2>
+        <h2>Confirma tu participación como: {plan.name}</h2>
 
         <div className={styles.paymentTabs}>
           <button className={`${styles.tabButton} ${paymentMethod === 'crypto' ? styles.activeTab : ''}`} onClick={() => setPaymentMethod('crypto')}>Cripto</button>
