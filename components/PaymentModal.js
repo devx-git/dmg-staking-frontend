@@ -52,7 +52,7 @@ export default function PaymentModal({
               <strong className={currentPayment.networkClass || ''}>{currentPayment.network}</strong>
             </div>
             <div className={styles.infoItem}>
-              <span>{paymentMethod.includes('cripto') || paymentMethod.includes('usdt') ? 'Dirección' : 'Número de Teléfono'}:</span>
+              <span>{paymentMethod.includes('crypto') || paymentMethod.includes('usdt') ? 'Dirección' : 'Confirmar al Correo'}:</span>
               <input type="text" value={currentPayment.address} readOnly />
               <button onClick={() => navigator.clipboard.writeText(currentPayment.address)}>Copiar</button>
             </div>
